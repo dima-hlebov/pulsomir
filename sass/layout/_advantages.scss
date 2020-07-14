@@ -1,0 +1,29 @@
+.advantages{
+    background-color: #f6f6f6;
+    padding: 70px 0 78px 0;
+    &__items{
+        display: flex;
+        margin-top: 65px;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 250px;
+        text-align: center;
+        color: $black-c;
+        img{
+            margin-bottom: 38px;
+        }
+        h3{
+            display: block;
+            margin-bottom: 29px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        p{
+            display: block;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
