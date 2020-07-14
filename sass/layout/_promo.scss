@@ -10,8 +10,8 @@
     }
     &__header{
         color: #ffffff;
-        font-size: 42px;
-        line-height: 42px;
+        font-size:2.625rem;
+        line-height: 2.625rem;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 0;
@@ -20,8 +20,8 @@
         margin-top: 17px;
         margin-bottom: 0;
         color: #ffffff;
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
         font-weight: 500;
         text-transform: uppercase;
     }
@@ -35,7 +35,7 @@
         width: 108px;
         text-align: center;
         color: #ffffff;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 500;
         img{
             display: block;
@@ -46,12 +46,20 @@
     &__link{
         margin-top: 18px;
         color: #ffffff;
-        font-size: 16px;
         font-weight: 500;
-        a{
-            color: #ffffff;
-            text-transform: uppercase;
-            text-decoration: underline;
+    }
+    @include for-size($m-device){
+        background-position: 40%;
+    }
+    @include for-size($s-device){
+        height: 585px;
+        background-position: 20%;
+        &__wrapper{
+            align-items: center;
+            margin-top: 60px;
         }
+        &__subheader{
+            margin-top: 12px;
+        }  
     }
 }

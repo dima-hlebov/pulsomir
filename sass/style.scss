@@ -1,8 +1,15 @@
 @import "base/mixins";
 @import "base/variables";
 
-* {
+html {
     font-family: "Museo Sans Cyrl", sans-serif;
+    font-size: 100%;
+    @include for-size($m-device){
+        font-size: 95%;
+    }
+    @include for-size($s-device){
+        font-size: 90%;
+    }
 }
 
 @import "layout/container";
@@ -11,4 +18,5 @@
 @import "layout/advantages";
 
 @import "components/btn";
-@import "components/header"
+@import "components/underlined-link";
+@import "components/header-section";

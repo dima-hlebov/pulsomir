@@ -1,0 +1,14 @@
+.underlined-link{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    &:hover{
+        color: $primary-c;
+    }
+    &--red{
+        color: $primary-c;
+        &:hover{
+            color: $primary-c;
+        }
+    }
+}

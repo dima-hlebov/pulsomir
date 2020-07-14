@@ -5,14 +5,17 @@
     text-transform: uppercase;
     border: none;
 
-    font-size: 12px;
-    width: 150px;
+    font-size: 0.75rem;
+    width: 9.375rem;
     height: 30px;
     border-radius: 5px;
     &--main{
         margin-top: 67px;
-        width: 300px;
+        width: 18.75rem;
         height: 50px;
-        font-size: 16px;
+        font-size: 1rem;
+        @include for-size($s-device){
+            margin-top: 47px;
+        }
     }
 }
