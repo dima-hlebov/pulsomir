@@ -1,12 +1,15 @@
 .underlined-link{
     color: #ffffff;
     text-transform: uppercase;
-    text-decoration: underline;
+    border-bottom: 1px solid $primary-c;
+    line-height: 1;
     &:hover{
         color: $primary-c;
+        text-decoration: none;
     }
     &--red{
         color: $primary-c;
+        font-size: 0.875rem;
         &:hover{
             color: $primary-c;
         }

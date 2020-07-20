@@ -1,0 +1,40 @@
+.tabs{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 0;
+    &__item{
+        cursor: pointer;
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        color: #6b6b6b;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 11px;
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        transition: 0.3s all;
+        div{
+            transform: skewX(25deg);
+        }
+        &:hover{
+            border-color: $primary-c;
+        }
+        &--active{
+            color: #ffffff;
+            background-color: #c70101;
+            border: none;
+        }
+    }
+    @include for-size($s-device){
+        &__item{
+            font-size: 0.8rem;
+            padding-top: 8px;
+            height: 35px;
+        }
+    }
+}

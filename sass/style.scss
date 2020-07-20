@@ -1,8 +1,10 @@
 @import "base/mixins";
 @import "base/variables";
 
-html {
+*{
     font-family: "Museo Sans Cyrl", sans-serif;
+}
+html {
     font-size: 100%;
     @include for-size($m-device){
         font-size: 95%;
@@ -10,13 +12,27 @@ html {
     @include for-size($s-device){
         font-size: 90%;
     }
+    @include for-size($xs-device){
+        font-size: 85%;
+    }
 }
 
 @import "layout/container";
 @import "layout/promo";
 @import "layout/header";
 @import "layout/advantages";
+@import "layout/consultation";
+@import "layout/carousel";
+@import "layout/catalog";
+@import "layout/comments";
+@import "layout/footer";
 
 @import "components/btn";
 @import "components/underlined-link";
-@import "components/header-section";
+@import "components/title";
+@import "components/outline";
+@import "components/form";
+@import "components/tabs";
+@import "components/catalog-item";
+@import "components/comment";
+@import "components/socials";

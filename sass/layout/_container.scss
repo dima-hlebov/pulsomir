@@ -1,7 +1,11 @@
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
     @include for-size($m-device){
-        padding: 0 20px 0 20px;
+        padding: 0 20px;
+    }
+    @include for-size($xs-device){
+        padding: 0 10px;
     }
 }

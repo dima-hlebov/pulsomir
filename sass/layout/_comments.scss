@@ -1,0 +1,11 @@
+.comments{
+    margin-bottom: 71px;
+    padding-right: 62px;
+    .comment{
+        margin-top: 100px;
+        line-height: 1.25rem;
+    }
+    @include for-size($s-device){
+        padding-right: 0;
+    }
+}

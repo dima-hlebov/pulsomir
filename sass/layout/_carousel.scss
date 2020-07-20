@@ -1,0 +1,64 @@
+ .carousel{
+    padding: 81px 0;
+    .prev{
+        background: url('../../icons/arrows/left-arrow.svg') center (center/cover) no-repeat;
+        position: absolute;
+        height: 50px;
+        width: 31px;
+        border: none;
+        top: 50%;
+        left: -66px;
+        margin-top: -25px;
+        padding: 0;
+    }
+    .next{
+        background: url('../../icons/arrows/right-arrow.svg') center (center/cover) no-repeat;
+        position: absolute;
+        height: 50px;
+        width: 31px;
+        border: none;
+        top: 50%;
+        right: -66px;
+        margin-top: -25px;
+        padding: 0;
+    }
+    .slider{
+        display: flex;
+        align-items: center;
+    }
+    .tns-item{
+        img{
+            display: block;
+            margin: auto auto;
+            width: 80%;
+        }
+    }
+    .tns-nav{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        button{
+            display: block;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border-color: $primary-c;
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &-active{
+            background-color: $primary-c !important;
+        }
+    }
+    @include for-size($l-device){
+        .prev, .next{
+            display: none;
+        }
+    }
+    @include for-size($s-device){
+        padding: 41px 0;
+    }
+ }

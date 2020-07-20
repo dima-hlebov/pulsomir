@@ -1,0 +1,9 @@
+.shadow:focus{
+    outline: none;
+    box-shadow: 0 0 20px $primary-c;
+    border: 1px solid $primary-c;
+    &--white{
+        box-shadow: 0 0 20px $primary-c;
+        border: 1px solid $primary-c;
+    }
+}
