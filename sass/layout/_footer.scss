@@ -50,7 +50,7 @@
             margin-bottom: 0;
         }
     }
-    @include for-size($m-device){
+    @include for-size($s-device){
         &__info{
             flex-direction: column;
             justify-content: space-between;
