@@ -8,4 +8,9 @@
     @include for-size($s-device){
         padding-right: 0;
     }
+    @include for-size($s-device){
+        .comment{
+            margin-top: 50px;
+        }
+    }
 }

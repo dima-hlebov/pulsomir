@@ -37,4 +37,11 @@
             display: none;
         }
     }
+    @include for-size($xs-device){
+        &__number {
+            display: block;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+    }
 }

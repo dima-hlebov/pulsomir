@@ -32,4 +32,11 @@
             margin-top: 10px;
         }
     }
+    @include for-size($s-device){
+        &__image{
+            margin-right: 10px;
+            width: 8.56rem;
+            height: 8.56rem;
+        }
+    }
 }

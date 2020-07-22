@@ -14,4 +14,11 @@
             margin-bottom: 20px;
         }
     }
+    @include for-size($xs-device){
+        width: 100%;
+        &__input{
+            height: 35px;
+            margin-bottom: 10px;
+        }
+    }
 }
