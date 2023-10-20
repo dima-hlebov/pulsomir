@@ -1,47 +1,56 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__logo{
+
+    &__logo {
         width: 15.625rem;
-        img{
+
+        img {
             width: 100%;
         }
     }
-    &__officials{
+
+    &__officials {
         color: #ffffff;
         font-size: 0.75rem;
         font-weight: normal;
         text-align: center;
-        span{
+
+        span {
             display: block;
             font-size: 1.125rem;
         }
     }
+
     &__number {
         display: block;
         color: #ffffff;
         font-size: 1.125rem;
-        &:hover{
+
+        &:hover {
             color: #ffffff;
             text-decoration: none;
         }
     }
-    &__contacts{
+
+    &__contacts {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
-    @include for-size($s-device){
-        &__officials{
+
+    @include for-size($s-device) {
+        &__officials {
             display: none;
         }
     }
-    @include for-size($xs-device){
+
+    @include for-size($xs-device) {
         &__number {
             display: block;
             color: #ffffff;
-            font-size: 1rem;
+            font-size: 0.975rem;
         }
     }
 }
